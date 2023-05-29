@@ -47,7 +47,30 @@
                 ['2019 / 2020', 40.28, 78.27, 120.78, 64.67, 117.70, 24.72],
                 ['2020 / 2021', 69.05, 59.88, 39.60, 61.17, 49.35, 17.47],
                 ['2021 / 2022', 132.59, 82.96, 58.20, 168.87, 40.63, 99.31],
-                ['2022 / 2023', 34.68, 72.03, 126.80, 0.00, 87.60, 119.85],
+                ['2022 / 2023', 34.68, 72.03, 126.80, 0.00, 87.60, 119.85]
+                ['PLAYER', 527.39, 361.97, 512.82, 339.2	374.64
+,
+            ]);
+
+            var options = { height: 300, width: '100%', legend: 'none', isStacked: true };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('First_chart_div'));
+            chart.draw(data, options);
+        }
+        
+        // All time winnings breakdown by player chart
+
+        function drawChartOne() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Player', 'Al', 'David', 'Bingham', 'Duffy', 'Struan', 'William'],
+                ['Player', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+                ['Al', 89.71, 116.79, 90.76, 40.65, 0, 118.98],
+                ['David', 41.87, 123.19, 18.49, 84.76, 57.26, 0],
+                ['Bingham', 107.96, 66.30, 34.14, 92.70, 74.26, 114.16],
+                ['Duffy', 40.28, 78.27, 120.78, 64.67, 117.70, 24.72],
+                ['Struan', 69.05, 59.88, 39.60, 61.17, 49.35, 17.47],
+                ['William', 132.59, 82.96, 58.20, 168.87, 40.63, 99.31],
             ]);
 
             var options = { height: 300, width: '100%', legend: 'none', isStacked: true };
@@ -134,14 +157,12 @@
 
             var data = google.visualization.arrayToDataTable([
                 ['Task', 'picks'],
-                ['English Premier League', 20],
-                ['English Championship', 45],
-                ['English League 1', 12],
-                ['English League 2', 4],
-                ['scottish Premiership', 24],
-                ['Scottish Championship', 8],
-                ['Scottish League 1', 4],
-                ['Scottish League 2', 12]
+                ['Al', 481.46],
+                ['David', 527.39],
+                ['Bingham', 361.97],
+                ['Duffy', 512.82],
+                ['Struan', 339.20,
+                ['William', 374.64],
             ]);
 
             var options = {
@@ -696,7 +717,7 @@
             </div>
             <div class="col-lg-6">
                 <div>
-                    <h1 class="intro">2019/2020 League Breakdown</h1>
+                    <h1 class="intro">Player Breakdown</h1>
                 </div>
                 <div id="fourth_chart_div" class="chart"></div>
                 <div><img src="assets/images/legend2.png" alt="EPL (blue) ECHA (red) EL1 (yellow) SPL (purple) SCHA (turquoise) SL1 (pink) SL2 (green)"></div>
