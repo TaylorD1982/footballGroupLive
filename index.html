@@ -34,29 +34,6 @@
         google.charts.setOnLoadCallback(drawChartTwo);
         google.charts.setOnLoadCallback(drawChartThree);
         google.charts.setOnLoadCallback(drawChartFour);
-
-        // All time winnings breakdown chart
-
-        function drawChartOne() {
-
-            var data = google.visualization.arrayToDataTable([
-                ['Year', 'Al', 'David', 'Bingham', 'Duffy', 'Struan', 'William'],
-                ['2016 / 2017', 89.71, 116.79, 90.76, 40.65, 0, 118.98],
-                ['2017 / 2018', 41.87, 123.19, 18.49, 84.76, 57.26, 0],
-                ['2018/ 2019', 107.96, 66.30, 34.14, 92.70, 74.26, 114.16],
-                ['2019 / 2020', 40.28, 78.27, 120.78, 64.67, 117.70, 24.72],
-                ['2020 / 2021', 69.05, 59.88, 39.60, 61.17, 49.35, 17.47],
-                ['2021 / 2022', 132.59, 82.96, 58.20, 168.87, 40.63, 99.31],
-                ['2022 / 2023', 34.68, 72.03, 126.80, 0.00, 87.60, 119.85]
-                ['PLAYER', 527.39, 361.97, 512.82, 339.2	374.64
-,
-            ]);
-
-            var options = { height: 300, width: '100%', legend: 'none', isStacked: true };
-
-            var chart = new google.visualization.ColumnChart(document.getElementById('First_chart_div'));
-            chart.draw(data, options);
-        }
         
         // All time winnings breakdown by player chart
 
